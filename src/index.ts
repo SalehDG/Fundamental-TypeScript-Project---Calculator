@@ -1,6 +1,6 @@
-const a1 = 10;
-const a2 = 3;
+function tambah(a: number, b: number): number {
+    return a + b;
+}
 
-const hasil = a1 + a2;
-
-console.log(hasil);
+console.log(tambah(10, 3));
+console.log(tambah(5, 7));
