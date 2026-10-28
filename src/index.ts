@@ -1,23 +1,19 @@
-function tambah(a: number, b: number): number {
-    return a + b;
-}
+type operator = "+" | "-" | "*" | "/";
 
-function kurang(a: number, b: number): number {
-    return a - b;
-}
-
-function kali(a: number, b: number): number {
-    return a * b;
-}  
-
-function bagi(a: number, b: number): number {
-    if (b === 0) {
-        throw new Error("Pembagian dengan nol tidak diperbolehkan.");
+function hasil(a1: number, a2: number, operator: operator): number {
+    switch (operator) {
+        case "+":
+            return a1 + a2;
+        case "-":
+            return a1 - a2;
+        case "*":
+            return a1 * a2;
+        case "/":
+            return a1 / a2;
     }
-    return a / b;
 }
 
-console.log(tambah(10, 3));
-console.log(kurang(5, 7));
-console.log(kali(4, 6));
-console.log(bagi(8, 2));
+console.log(hasil(10, 3, "+"));
+console.log(hasil(10, 3, "-"));
+console.log(hasil(10, 3, "*"));
+console.log(hasil(10, 3, "/"));
