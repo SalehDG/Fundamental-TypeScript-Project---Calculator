@@ -1,6 +1,6 @@
 export type Operator = "+" | "-" | "*" | "/";
 
-function hasil(a1: number, a2: number, Operator: Operator): number {
+export function hasil(a1: number, a2: number, Operator: Operator): number {
     switch (Operator) {
         case "+":
             return a1 + a2;
