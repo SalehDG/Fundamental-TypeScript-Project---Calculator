@@ -4,7 +4,7 @@
   "description": "I'm going to start my journey on studying TypeScript, and I start from calculator.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest run"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "homepage": "https://github.com/SalehDG/Fundamental-TypeScript-Project---Calculator#readme",
   "devDependencies": {
     "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "vitest": "^5.0.5"
   }
 }
